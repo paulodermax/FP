@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Übung 1 – Blogprojekt Übersicht</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        main {
+            padding: 2rem;
+            color: rgb(189, 189, 189);
+        }
+        section {
+            background-color: rgb(60, 60, 60);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: rgb(38, 38, 38) 0px 10px 20px -5px;
+        }
+        h2 {
+            color: rgb(189, 189, 189);
+        }
+        ul, ol {
+            margin-left: 1.5rem;
+        }
+        a {
+            color: #70a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #444;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #333;
+            padding: 1rem;
+            border-radius: 8px;
+            color: rgb(189, 189, 189);
+            overflow-x: auto;
+        }
+        .code-container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .code-block, .output-block {
+            width: 45%;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <html>
+    <header>
+        <div id="headerdiv">
+            <a href="C:\.mainroot\Uni\Fortgeschrittene Programmierung\index.html" id="homebutton">🏠</a>
+            <h1 id="headerh1">Übung 1</h1>
+        </div>
+        <link rel="stylesheet" href="style.css">
+    </header>
+
+    <main>
+        <section>
+            <h2>🛠️ Aufgabe 1: Entwicklungsumgebung & erstes HTML-Dokument</h2>
+            <ul>
+                <li>neues Projekt <code>uebung01</code> und <code>index.html</code> erstellen</li>
+                <li>Einfachen HTML-Text schreiben und Seite im Browser öffnen</li>
+            </ul>
+        </section>
+        <section>
+            <h2>📅 Aufgabe 2: HTML-Tabelle mit Stundenplan</h2>
+            <div class="code-container">
+                <!-- Code Block -->
+                <div class="code-block">
+                    <h3>Code</h3>
+                    <pre>
+                        &lt;table class="table"&gt;
+                            &lt;thead&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Montag&lt;/th&gt;
+                                    &lt;th&gt;Dienstag&lt;/th&gt;
+                                    &lt;th&gt;Mittwoch&lt;/th&gt;
+                                &lt;/tr&gt;
+                            &lt;/thead&gt;
+                            &lt;tbody&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Mathe&lt;/td&gt;
+                                    &lt;td&gt;Biologie&lt;/td&gt;
+                                    &lt;td&gt;Chemie&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Deutsch&lt;/td&gt;
+                                    &lt;td&gt;Physik&lt;/td&gt;
+                                    &lt;td&gt;Geschichte&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/tbody&gt;
+                        &lt;/table&gt;
+                    </pre>
+                </div>
+
+                <!-- Output Block -->
+                <div class="output-block">
+                    <h3>Fertiges Produkt</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Montag</th>
+                                <th>Dienstag</th>
+                                <th>Mittwoch</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                            <tr>
+                                <td>Mathe</td>
+                                <td>Biologie</td>
+                                <td>Chemie</td>
+                            </tr>
+                            <tr>
+                                <td>Deutsch</td>
+                                <td>Physik</td>
+                                <td>Geschichte</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🧾 Aufgabe 3: HTML-Formular zur Prüfungsanmeldung</h2>
+            <div class="code-container">
+                <div class="code-block">
+                    <li><code>&lt;form&gt;</code> mit Dropdown für Prüfungsauswahl</li>
+                    <li><code>mailto:</code> als <code>action</code> zum E-Mail-Versand ohne JS</li>
+                    <pre>
+                        &lt;form action="mailto:test@example.com"&gt;
+                            &lt;label for="name"&gt;Name:&lt;/label&gt;
+                            &lt;input type="text" id="name" name="name"&gt;
+                            &lt;input type="submit" value="Anmelden"&gt;
+                        &lt;/form&gt;
+                    </pre>
+                </div>
+                <div class="output-block">
+                    <h3>Fertiges Produkt</h3>
+                        <form action="mailto:test@example.com">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
+                            <input type="submit" value="Anmelden">
+                        </form>
+                </div>
+            </code-container>
+        </section>
+
+        <section>
+            <h2>📰 Aufgabe 4: Artikel mit vollständigen Attributen</h2>
+            <ul>
+                <li>Verwende: <code>&lt;article&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;a&gt;</code></li>
+                <li>Attribute: Titel, Datum, Autor, Teaser, Text, Tags, Bild</li>
+                <li>Social-Media-Links hinzufügen (Platzhalter-Links)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📂 Aufgabe 5: Startseite mit kompletter Blog-Struktur</h2>
+            <ul>
+                <li>Verwende: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;footer&gt;</code></li>
+                <li>Inhalte: mehrere Artikel, Seitenleiste mit Login, Suche, Monatsliste, Tagcloud</li>
+                <li>„Neuen Artikel erstellen“-Link</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🌐 Aufgabe 6: Klickprototyp – Unterseiten anlegen</h2>
+            <ul>
+                <li>Folgende Seiten erstellen und verlinken:
+                    <ul>
+                        <li><code>kontakt.html</code>, <code>impressum.html</code></li>
+                        <li><code>suchergebnis.html</code>, <code>tagliste.html</code>, <code>monatsliste.html</code></li>
+                        <li><code>teilenEmail.html</code>, <code>artikelNeu.html</code></li>
+                    </ul>
+                </li>
+                <li>Alle Links zu Startseite & Artikeln korrekt setzen</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🔗 Aufgabe 7: Teilen auf Social Media</h2>
+            <ul>
+                <li>„Teilen auf Facebook“ → <code>https://www.facebook.com/sharer/sharer.php?u=[URL]</code></li>
+                <li>„Twittern“ → <code>https://twitter.com/intent/tweet?url=[URL]</code></li>
+                <li>Verwende z. B. <code>blog/artikel1.html</code> als Platzhalter</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>✅ Aufgabe 8: Testen der Navigation</h2>
+            <ul>
+                <li>Jede Seite öffnen und Links prüfen</li>
+                <li>Funktioniert Navigation zu Artikel, zurück zur Startseite, zwischen Suchergebnis und Artikel?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📘 Tipp</h2>
+            <p>
+                Verwende einheitliches Grundlayout und kopiere es für neue Seiten. In der Praxis nutzt man Templates, Frameworks oder CMS.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
