@@ -94,7 +94,7 @@ header {
             background-color: #4CAF50;
             color: white;
         }
-        
+
 body{
     background-color: rgb(86, 86, 86);
     margin: 0em;
@@ -147,6 +147,17 @@ body{
     margin: 1rem;
     margin-top: 1rem;
     max-height: 50%;
+}
+.underpost>ol>li{
+    color: rgb(189, 189, 189);
+    word-break: break-word;
+    white-space: normal;
+    text-overflow: ellipsis; /* This is where the magic happens. */
+    margin-top: 0.5rem;
+    max-height: 50%;
+}
+.underpost>ol{
+    margin-left: 0.5rem;
 }
 .underpost>form{
     height:100%;
