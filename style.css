@@ -21,13 +21,79 @@ header {
     color: rgb(189, 189, 189);
     font-size: 2rem;
 }
-
+#fpbutton {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    font-size: 2rem;
+}
 #headerh1 {
     color: rgb(189, 189, 189);
     font-size: 4em;
     margin: 0;
 }
 
+
+        main {
+            padding: 2rem;
+            color: rgb(189, 189, 189);
+        }
+        section {
+            background-color: rgb(60, 60, 60);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: rgb(38, 38, 38) 0px 10px 20px -5px;
+        }
+        h2 {
+            color: rgb(189, 189, 189);
+        }
+        ul, ol {
+            margin-left: 1.5rem;
+        }
+        a {
+            color: #70a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #444;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        pre {
+            background: #333;
+            padding: 1rem;
+            border-radius: 8px;
+            color: rgb(189, 189, 189);
+            overflow-x: auto;
+        }
+        .code-container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .code-block, .output-block {
+            width: 45%;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        .table th {
+            background-color: #4CAF50;
+            color: white;
+        }
 
 body{
     background-color: rgb(86, 86, 86);
@@ -81,6 +147,17 @@ body{
     margin: 1rem;
     margin-top: 1rem;
     max-height: 50%;
+}
+.underpost>ol>li{
+    color: rgb(189, 189, 189);
+    word-break: break-word;
+    white-space: normal;
+    text-overflow: ellipsis; /* This is where the magic happens. */
+    margin-top: 0.5rem;
+    max-height: 50%;
+}
+.underpost>ol{
+    margin-left: 0.5rem;
 }
 .underpost>form{
     height:100%;

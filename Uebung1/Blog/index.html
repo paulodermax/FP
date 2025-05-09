@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Mein Blog</title>
+</head>
+<body>
+
+  <!-- Kopfleiste -->
+  <header>
+    <h1><a href="index.html">Mein Blog</a></h1>
+    <p>Ein einfacher HTML-Blog</p>
+    <nav>
+      <a href="kontakt.html">Kontakt</a> |
+      <a href="impressum.html">Impressum</a> |
+      <a href="artikelNeu.html">Neuen Artikel erstellen</a>
+    </nav>
+  </header>
+
+  <!-- Hauptinhalt + Seitenleiste -->
+  <main>
+
+    <!-- Hauptinhalt -->
+    <section>
+      <article>
+        <h2><a href="artikel.html">Die Zukunft des Webdesigns</a></h2>
+
+        <div>
+          <p><strong>Erscheinungsdatum:</strong> 08. Mai 2025</p>
+          <p><strong>Autor:</strong> Max Mustermann</p>
+        </div>
+
+        <p><em>Teaser:</em> Webdesign verändert sich schnell – neue Technologien und Nutzerverhalten beeinflussen, wie Webseiten gestaltet werden.</p>
+
+        <a href="artikel.html">
+          <img src="medien/webdesign.jpg" alt="Symbolbild Webdesign" width="600" height="400">
+        </a>
+
+        <div>
+          <p>
+            Der Artikeltext beginnt hier. Webdesign wird zunehmend durch mobile Nutzung, Barrierefreiheit und Performance geprägt.
+          </p>
+        </div>
+
+        <div>
+          <p><strong>Tags:</strong></p>
+          <ul>
+            <li><a href="tagliste.html">Webdesign</a></li>
+            <li><a href="tagliste.html">HTML</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p><strong>Teilen:</strong></p>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/artikel.html" target="_blank">Facebook</a> |
+          <a href="https://twitter.com/share?url=http://example.com/artikel.html&text=Die%20Zukunft%20des%20Webdesigns" target="_blank">Twitter</a> |
+          <a href="teilenEmail.html">via E-Mail</a>
+        </div>
+      </article>
+
+      <p><a href="artikelNeu.html"><strong>➕ Neuen Artikel erstellen</strong></a></p>
+    </section>
+
+    <!-- Seitenleiste -->
+    <aside>
+
+      <!-- Login -->
+      <section>
+        <h3>Login</h3>
+        <form action="#" method="post">
+          <label>Benutzername: <input type="text" name="user"></label><br>
+          <label>Passwort: <input type="password" name="pass"></label><br>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+
+      <!-- Suche -->
+      <section>
+        <h3>Suche</h3>
+        <form action="suchergebnis.html" method="get">
+          <input type="text" name="q" placeholder="Suchbegriff">
+          <button type="submit">Suchen</button>
+        </form>
+      </section>
+
+      <!-- Monatsliste -->
+      <section>
+        <h3>Archiv</h3>
+        <ul>
+          <li><a href="monatsliste.html">Mai 2025</a></li>
+          <li><a href="monatsliste.html">April 2025</a></li>
+        </ul>
+      </section>
+
+      <!-- Tagcloud -->
+      <section>
+        <h3>Tags</h3>
+        <p>
+          <a href="tagliste.html">Webdesign</a>
+          <a href="tagliste.html">HTML</a>
+          <a href="tagliste.html">JavaScript</a>
+        </p>
+      </section>
+
+    </aside>
+
+  </main>
+
+  <!-- Fußleiste -->
+  <footer>
+    <p>
+      &copy; 2025 Mein Blog |
+      <a href="kontakt.html">Kontakt</a> |
+      <a href="impressum.html">Impressum</a> |
+      <a href="artikelNeu.html">Neuen Artikel erstellen</a>
+    </p>
+  </footer>
+
+</body>
+</html>
