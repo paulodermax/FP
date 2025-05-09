@@ -21,7 +21,15 @@ header {
     color: rgb(189, 189, 189);
     font-size: 2rem;
 }
-
+#fpbutton {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    font-size: 2rem;
+}
 #headerh1 {
     color: rgb(189, 189, 189);
     font-size: 4em;
